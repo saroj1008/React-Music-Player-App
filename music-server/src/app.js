@@ -8,7 +8,7 @@ app.use(express.json());
 app.use(cors());
 
 const mongoose = require("mongoose");
-mongoose.connect("mongodb://127.0.0.1:27017/react-finalProject");
+mongoose.connect("mongodb://localhost:27017/react-finalProject");
 
 app.use("/music/:songname", (req, res, next) => {
   res.sendFile(path.join(__dirname, "songs", req.params.songname));

@@ -17,7 +17,7 @@ function withUser(ChildComponent) {
   class HOC extends React.Component {
     state = {};
     componentDidMount() {
-      this.checkForToken();
+      // this.checkForToken();
     }
     checkForToken = () => {
       const token = window.localStorage.getItem("token");
